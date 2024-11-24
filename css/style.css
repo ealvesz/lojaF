@@ -1,0 +1,314 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fundo Claro */
+    color: #333; /* Texto Escuro */
+}
+
+header {
+    background-color: #111; /* Cor Escura no Header */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo img {
+    height: 100px;
+    width: 100%;      /* Faz a imagem preencher a largura do contêiner */
+    object-fit: cover; /* A imagem vai preencher o espaço sem distorcer, mas pode cortar as bordas */
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.navbar .pesquisa input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.navbar .pesquisa button {
+    background-color: #C8102E; /* Vermelho */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.marketing h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.marketing p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.marketing .btn-promocao {
+    padding: 15px 30px;
+    background-color: black; /* Preto */
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.marketing .btn-promocao:hover {
+    background-color: #C8102E; /* Vermelho */
+}
+
+/* Seção de Boas-vindas para Fãs */
+.boas-vindas {
+    background-color: #C8102E; /* Preto */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.boas-vindas h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.boas-vindas p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.boas-vindas .btn-promocao {
+    padding: 15px 30px;
+    background-color: black; /* Preto */
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.boas-vindas .btn-promocao:hover {
+    background-color: #C8102E; /* Vermelho */
+}
+
+/* Seção de Destaques */
+.destaques {
+    padding: 40px 20px;
+    background-color: #fff; /* Branco */
+    text-align: center;
+}
+
+.destaques h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #C8102E; /* Vermelho */
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produto {
+    background-color: #fff; /* Branco */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.produto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.produto p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.produto.promocional {
+    border-color: #C8102E; /* Vermelho */
+    background-color: #f9f9f9;
+}
+
+.produto.promocional .promocao {
+    display: inline-block;
+    background-color: #C8102E; /* Vermelho */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Botões de Compra */
+.btn-comprar {
+    padding: 10px 20px;
+    background-color: black; /* Preto */
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-comprar:hover {
+    background-color: #111; /* Preto */
+}
+
+/* Footer */
+footer {
+    background-color: #C8102E; /* Vermelho */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+/* Seção de Contato */
+.contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contato .informacoes,
+.contato .formulario {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.contato .informacoes {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato .informacoes p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.contato .informacoes a {
+    color: #C8102E; /* Vermelho */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.contato .informacoes a:hover {
+    text-decoration: underline;
+}
+
+.contato .formulario {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato .formulario input,
+.contato .formulario textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1.1em;
+    box-sizing: border-box;
+}
+
+.contato .formulario button {
+    background-color: #C8102E; /* Vermelho */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.contato .formulario button:hover {
+    background-color: #111; /* Preto */
+}
+
+@media (max-width: 768px) {
+    .contato {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .contato .informacoes,
+    .contato .formulario {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contato .formulario input,
+    .contato .formulario textarea {
+        padding: 20px;
+        font-size: 1.2em;
+    }
+
+    .contato .formulario button {
+        padding: 15px;
+        font-size: 1.3em;
+    }
+}
